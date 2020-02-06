@@ -1,15 +1,30 @@
 require 'spec_helper'
 describe Player do 
-  subject(:player) { described_class.new("Joe") }
+  subject(:josh) { described_class.new("Josh") }
+  subject(:mrtl) { described_class.new("Mrtl") }
+
   describe '#name' do
     it 'should return the name of the player' do 
-      expect(player.name).to eq ("Joe")
+      expect(josh.name).to eq ("Josh")
     end 
   end 
 
-  describe '#deduct_hp' do 
-    it 'should deduct from hp' do 
-      expect { player.deduct_hp(10) }.to change{player.hp}.by(-10)
-    end 
-  end 
-end 
+  describe '#hp' do
+    it 'returns the hit points' do
+      expect(josh.hp).to eq described_class::DEFAULT_HP
+    end
+  end
+
+  describe '#attack' do
+    it 'damages the player' do
+      expect(mrtl).to receive(:receive_damage)
+      josh.attack(mrtl)
+    end
+  end
+
+  describe '#receive_damage' do
+    it 'reduces the player hit points' do
+      expect { josh.receive_damage }.to change { josh.hp }.by(-10)
+    end
+  end
+end
