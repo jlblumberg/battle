@@ -1,12 +1,19 @@
 class Game
 
-  # def initialize
-  #    @player_1 = player_1
-  #    @player_2 = player_2
-  # end 
+  def initialize(player_1, player_2)
+    @players = [player_1, player_2]
+  end 
 
-  def attack(other_player)
-    other_player.receive_damage
+  def player_1
+    @players.first
+  end
+
+  def player_2
+    @players.last
+  end
+
+  def attack(person)
+    person.receive_damage
   end
   
 end
