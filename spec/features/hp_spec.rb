@@ -12,4 +12,4 @@ feature 'View HP' do
     expect(page).to have_content("Josh HP:60")
   end
 
-ends
+end
