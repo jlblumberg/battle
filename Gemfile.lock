@@ -55,10 +55,9 @@ PLATFORMS
 
 DEPENDENCIES
   capybara
-  rack
   rspec
   shotgun
   sinatra
 
 BUNDLED WITH
-   2.1.2
+   2.1.4
