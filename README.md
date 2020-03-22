@@ -7,7 +7,7 @@ Battle challenge - original README [here](https://github.com/makersacademy/cours
 
 ## <a name="Outline">Outline</a>
 
-Build web app!
+Build a web app!
 
 ## <a name="Specifications">Specifications</a>
 
@@ -82,4 +82,4 @@ Testing:
 
 ## <a name="Future_work">Future work</a>
 
-On a revisit of the project, I would like to build in functionality that would allow multiple (>2) players at a time.
+On a revisit of the project, I would like to build in functionality that would allow multiple (>2) players at a time. I would also add some more styling so that the game looks more enticing.
